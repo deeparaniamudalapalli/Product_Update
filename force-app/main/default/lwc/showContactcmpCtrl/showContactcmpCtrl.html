@@ -1,0 +1,9 @@
+<template>
+    <lightning-button label="Show Contacts" onclick={getContactRec}></lightning-button>
+<template if:true={lstcontact}>
+    <template for:each={lstcontact} for:item="con">
+        <p key={con.Id}>{con.Name}</p>
+    </template>
+</template>
+    
+</template>

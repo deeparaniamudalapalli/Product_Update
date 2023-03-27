@@ -1,0 +1,13 @@
+<template>
+  
+<lightning-card title="EmiCalculation" icon-name="custom:custom91">
+    <p class="host"></p>
+        <lightning-input label="LoanAmount"  onchange={handlechange}> </lightning-input>
+     <lightning-input label=" LoanTenture"  onchange={handleChange}> </lightning-input>
+    <lightning-input label="InterestRate"  onchange={handleChange}> </lightning-input>
+     <lightning-button label="Calculate" onclick={calcExpr}></lightning-button>
+     <lightning-input label="Result" name="result" onchange={res}></lightning-input>
+ 
+   </lightning-card>
+  
+</template>

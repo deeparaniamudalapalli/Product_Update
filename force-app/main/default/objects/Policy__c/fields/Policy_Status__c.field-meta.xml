@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Policy_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Policy Status</label>
+    <summarizedField>Policy_Line_Item__c.CreatedDate</summarizedField>
+    <summaryFilterItems>
+        <field>Policy_Line_Item__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Policy_Line_Item__c.Policy__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

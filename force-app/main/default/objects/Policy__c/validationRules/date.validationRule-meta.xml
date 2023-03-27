@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>date</fullName>
+    <active>true</active>
+    <errorConditionFormula>Policy_End_Date_And_Time__c  &lt;  Policy_Start_Date_And_Time__c</errorConditionFormula>
+    <errorMessage>Enter dates correctly</errorMessage>
+</ValidationRule>

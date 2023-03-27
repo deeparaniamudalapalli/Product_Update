@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Policy_Period</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( ISNEW(), Policy__r.Policy_Period__c  = 10 ,  Policy__r.Policy_End_Date_And_Time__c   &gt; ( NOW()) )</errorConditionFormula>
+    <errorMessage>Show error message</errorMessage>
+</ValidationRule>
